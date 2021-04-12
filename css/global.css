@@ -1,0 +1,255 @@
+/* Dimensions & proportions */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+/* ScrollBar */
+html,
+body {
+	scrollbar-width: thin;
+	scroll-behavior: smooth;
+}
+
+/* links & buttons defaults */
+a,
+li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a,
+button,
+.btn,
+.link {
+	cursor: pointer;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1380px;
+}
+
+/* Theming */
+*,
+*::before,
+*::after {
+	--yallow: #fcbd2f;
+	--navvy: #1b1b29;
+	--navvy-light: #484871;
+}
+
+html,
+body {
+	background-color: #1b1b29;
+}
+/* 
+body {
+	background-color: rgb(47, 47, 47); 
+}
+*/
+a,
+a:visited {
+	color: var(--yallow);
+}
+
+a:hover,
+a:focus {
+	outline: 0.05em solid var(--yallow);
+}
+
+/* Header */
+header {
+	width: 100%;
+	padding: 1% 0%;
+}
+
+header > * {
+	width: 50%;
+	/* border: 0.005rem solid white; */
+}
+
+header,
+header .header-left,
+header .header-right,
+header .header-left .header-nav {
+	display: flex;
+}
+
+header,
+header .header-left,
+header .header-right,
+header .header-left .header-nav {
+	flex-direction: row;
+}
+
+header .header-left > *,
+header .header-right {
+	align-items: center;
+}
+
+header .header-right {
+	justify-content: flex-end;
+}
+
+header .header-left .header-nav {
+	flex: 2;
+}
+header .header-left .header-nav > * {
+	margin: 0 40px;
+}
+
+header .header-left .header-nav li a {
+	color: white;
+}
+
+header .header-left .header-nav li a:hover,
+header .header-left .header-nav li a:focus {
+	outline: none;
+	color: var(--yallow);
+	border-bottom: 2px solid var(--yallow);
+}
+
+header .header-right .sign-up-btn {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 30px;
+	font-weight: 900;
+
+	color: var(--navvy);
+	background-color: var(--yallow);
+}
+
+header .header-right .sign-up-btn:hover,
+header .header-right .sign-up-btn:focus {
+	color: var(--yallow);
+	background-color: var(--navvy);
+	border: 2px solid var(--yallow);
+}
+
+main {
+	display: flex;
+
+	flex-direction: row;
+	color: white;
+}
+
+main,
+main > * {
+	flex: 1;
+}
+
+main .main-left {
+	margin-top: 14%;
+}
+
+main .main-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 5%;
+}
+
+main .main-right > img {
+	width: 100%;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 20px 0px;
+}
+.dasb-btn {
+	/* margin-top: 5%; */
+	padding: 15px 30px;
+	display: inline-block;
+	border: none;
+	outline: none;
+	text-decoration: inherit;
+	background-color: var(--navvy);
+	background: linear-gradient(var(--navvy), var(--navvy)) padding-box,
+		linear-gradient(to right, white, var(--navvy)) border-box;
+	border-radius: 40px;
+	border: 2px solid transparent;
+}
+
+.dasb-icon {
+	width: 35px;
+	color: white;
+}
+
+.dasb-labels {
+	margin-left: 10px;
+	text-align: start;
+	color: white;
+}
+
+.dasb-label-a {
+	font-weight: 500;
+}
+
+.dasb-label-b {
+	font-weight: 900;
+}
+
+footer .media {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 30%;
+	justify-content: space-evenly;
+}
+
+/* footer .media a {
+	margin: 0 20px;
+} */
+
+footer .media .chat-icon-btn {
+	padding: 15px;
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--yallow);
+}
+
+footer .media .chat-icon-btn path {
+	width: 40px;
+	height: 40px;
+	fill: var(--navvy-light);
+}
+
+footer .media .chat-icon-btn:hover,
+footer .media .chat-icon-btn:focus {
+	border: none;
+	outline: none;
+	padding: 15px;
+
+	background: var(--navvy-light);
+}
+
+footer .media .chat-icon-btn:hover path,
+footer .media .chat-icon-btn:focus path {
+	fill: var(--yallow);
+}
