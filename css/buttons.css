@@ -13,9 +13,9 @@
 *,
 *::before,
 *::after {
-  /* Feel free to add/modify these colors to your styles */
+	/* Feel free to add/modify these colors to your styles */
 
-  /*
+	/*
     Please define in your own styles
 
     *[data-theme="theme-name"],html, body {
@@ -29,465 +29,431 @@
     }
   */
 
+	--btn-primary-xx: #0080ff;
+	--btn-warning-xx: #ca6200;
+	--btn-success-xx: #05ac05;
+	--btn-danger-xx: #d60000;
+	--btn-purple-xx: #8a14f8;
+	--btn-black-xx: #1f1f1f;
+	--btn-white-xx: #f0f0f0;
 
-
-  --btn-primary-xx: #0080ff;
-  --btn-warning-xx: #ca6200;
-  --btn-success-xx: #05ac05;
-  --btn-danger-xx: #d60000;
-  --btn-purple-xx: #8a14f8;
-  --btn-black-xx: #1f1f1f;
-  --btn-white-xx: #f0f0f0;
-
-  --btn-white-xx-dark: #d1d1d1;
-  --btn-black-xx-dark: #1b1b1b;
-  --btn-warning-xx-dark: #b65800;
-  --btn-purple-xx-dark: #550d99;
-  --btn-danger-xx-dark: #a00000;
-  --btn-success-xx-dark: #069206;
-  --btn-primary-xx-dark: #006ad4;
- 
+	--btn-white-xx-dark: #d1d1d1;
+	--btn-black-xx-dark: #1b1b1b;
+	--btn-warning-xx-dark: #b65800;
+	--btn-purple-xx-dark: #550d99;
+	--btn-danger-xx-dark: #a00000;
+	--btn-success-xx-dark: #069206;
+	--btn-primary-xx-dark: #006ad4;
 }
 
 /** Button default styles */
 .btn {
-  color: var(--fg);
-  padding: 0.5em 1.5em;
-  background-color: inherit;
-  border: 0.2em solid inherit;
+	color: var(--fg);
+	padding: 0.5em 1.5em;
+	background-color: inherit;
+	border: 0.2em solid inherit;
 }
 
 .btn:hover {
-  transition: all 0.15s ease-in-out;
-  cursor: pointer;
+	transition: all 0.15s ease-in-out;
+	cursor: pointer;
 }
 
-.btn:focus, .btn:focus > * {
-  color: var(--fg);
+.btn:focus,
+.btn:focus > * {
+	color: var(--fg);
 }
 
 /**  Color variants */
 
 /** Accent Color variant */
-.btn[data-outline="accent"] {
-  color: var(--accent);
-  background-color: var(--bg);
-  border: 0.2em solid var(--accent);
+.btn[data-outline='accent'] {
+	color: var(--accent);
+	background-color: var(--bg);
+	border: 0.2em solid var(--accent);
 }
 
-.btn[data-outline="accent-dark"] {
-  color: var(--accent-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--accent-dark);
+.btn[data-outline='accent-dark'] {
+	color: var(--accent-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--accent-dark);
 }
 
-.btn[data-fill="accent"] {
-  color: var(--bg);
-  background-color: var(--accent);
-  border: 0.2em solid var(--accent);
+.btn[data-fill='accent'] {
+	color: var(--bg);
+	background-color: var(--accent);
+	border: 0.2em solid var(--accent);
 }
 
-.btn[data-fill="accent-dark"] {
-  color: var(--bg);
-  background-color: var(--accent-dark);
-  border: 0.2em solid var(--accent-dark);
+.btn[data-fill='accent-dark'] {
+	color: var(--bg);
+	background-color: var(--accent-dark);
+	border: 0.2em solid var(--accent-dark);
 }
 
-.btn[data-hover-outline="accent"]:hover
- {
-  color: var(--accent);
-  background-color: var(--bg);
-  border: 0.2em solid var(--accent);
+.btn[data-hover-outline='accent']:hover {
+	color: var(--accent);
+	background-color: var(--bg);
+	border: 0.2em solid var(--accent);
 }
 
-.btn[data-hover-outline="accent-dark"]:hover
- {
-  color: var(--accent-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--accent-dark);
+.btn[data-hover-outline='accent-dark']:hover {
+	color: var(--accent-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--accent-dark);
 }
 
-.btn[data-hover-fill="accent"]:hover
- {
-  color: var(--bg);
-  background-color: var(--accent);
-  border: 0.2em solid var(--accent);
+.btn[data-hover-fill='accent']:hover {
+	color: var(--bg);
+	background-color: var(--accent);
+	border: 0.2em solid var(--accent);
 }
 
-.btn[data-hover-fill="accent-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--accent-dark);
-  border: 0.2em solid var(--accent-dark);
+.btn[data-hover-fill='accent-dark']:hover {
+	color: var(--bg);
+	background-color: var(--accent-dark);
+	border: 0.2em solid var(--accent-dark);
 }
 
 /** Primary Color variant */
-.btn[data-outline="primary"] {
-  color: var(--btn-primary-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-primary-xx);
+.btn[data-outline='primary'] {
+	color: var(--btn-primary-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-primary-xx);
 }
 
-.btn[data-outline="primary-dark"] {
-  color: var(--btn-primary-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-primary-xx-dark);
+.btn[data-outline='primary-dark'] {
+	color: var(--btn-primary-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-primary-xx-dark);
 }
 
-.btn[data-fill="primary"] {
-  color: var(--bg);
-  background-color: var(--btn-primary-xx);
-  border: 0.2em solid var(--btn-primary-xx);
+.btn[data-fill='primary'] {
+	color: var(--bg);
+	background-color: var(--btn-primary-xx);
+	border: 0.2em solid var(--btn-primary-xx);
 }
 
-.btn[data-fill="primary-dark"] {
-  color: var(--bg);
-  background-color: var(--btn-primary-xx-dark);
-  border: 0.2em solid var(--btn-primary-xx-dark);
+.btn[data-fill='primary-dark'] {
+	color: var(--bg);
+	background-color: var(--btn-primary-xx-dark);
+	border: 0.2em solid var(--btn-primary-xx-dark);
 }
 
-.btn[data-hover-outline="primary"]:hover
- {
-  color: var(--btn-primary-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-primary-xx);
+.btn[data-hover-outline='primary']:hover {
+	color: var(--btn-primary-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-primary-xx);
 }
 
-.btn[data-hover-outline="primary-dark"]:hover
- {
-  color: var(--btn-primary-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-primary-xx-dark);
+.btn[data-hover-outline='primary-dark']:hover {
+	color: var(--btn-primary-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-primary-xx-dark);
 }
 
-.btn[data-hover-fill="primary"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-primary-xx);
-  border: 0.2em solid var(--btn-primary-xx);
+.btn[data-hover-fill='primary']:hover {
+	color: var(--bg);
+	background-color: var(--btn-primary-xx);
+	border: 0.2em solid var(--btn-primary-xx);
 }
 
-.btn[data-hover-fill="primary-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-primary-xx-dark);
-  border: 0.2em solid var(--btn-primary-xx-dark);
+.btn[data-hover-fill='primary-dark']:hover {
+	color: var(--bg);
+	background-color: var(--btn-primary-xx-dark);
+	border: 0.2em solid var(--btn-primary-xx-dark);
 }
 
 /** Warning Color variant */
-.btn[data-outline="warning"] {
-  color: var(--btn-warning-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-warning-xx);
+.btn[data-outline='warning'] {
+	color: var(--btn-warning-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-warning-xx);
 }
 
-.btn[data-outline="warning-dark"] {
-  color: var(--btn-warning-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-warning-xx-dark);
+.btn[data-outline='warning-dark'] {
+	color: var(--btn-warning-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-warning-xx-dark);
 }
 
-.btn[data-fill="warning"] {
-  color: var(--bg);
-  background-color: var(--btn-warning-xx);
-  border: 0.2em solid var(--btn-warning-xx);
+.btn[data-fill='warning'] {
+	color: var(--bg);
+	background-color: var(--btn-warning-xx);
+	border: 0.2em solid var(--btn-warning-xx);
 }
 
-.btn[data-fill="warning-dark"] {
-  color: var(--bg);
-  background-color: var(--btn-warning-xx-dark);
-  border: 0.2em solid var(--btn-warning-xx-dark);
+.btn[data-fill='warning-dark'] {
+	color: var(--bg);
+	background-color: var(--btn-warning-xx-dark);
+	border: 0.2em solid var(--btn-warning-xx-dark);
 }
 
-.btn[data-hover-outline="warning"]:hover
- {
-  color: var(--btn-warning-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-warning-xx);
+.btn[data-hover-outline='warning']:hover {
+	color: var(--btn-warning-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-warning-xx);
 }
 
-.btn[data-hover-outline="warning-dark"]:hover
- {
-  color: var(--btn-warning-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-warning-xx-dark);
+.btn[data-hover-outline='warning-dark']:hover {
+	color: var(--btn-warning-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-warning-xx-dark);
 }
 
-.btn[data-hover-fill="warning"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-warning-xx);
-  border: 0.2em solid var(--btn-warning-xx);
+.btn[data-hover-fill='warning']:hover {
+	color: var(--bg);
+	background-color: var(--btn-warning-xx);
+	border: 0.2em solid var(--btn-warning-xx);
 }
 
-.btn[data-hover-fill="warning-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-warning-xx-dark);
-  border: 0.2em solid var(--btn-warning-xx-dark);
+.btn[data-hover-fill='warning-dark']:hover {
+	color: var(--bg);
+	background-color: var(--btn-warning-xx-dark);
+	border: 0.2em solid var(--btn-warning-xx-dark);
 }
 
 /** Danger Color variant */
-.btn[data-outline="danger"] {
-  color: var(--btn-danger-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-danger-xx);
+.btn[data-outline='danger'] {
+	color: var(--btn-danger-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-danger-xx);
 }
 
-.btn[data-outline="danger-dark"] {
-  color: var(--btn-danger-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-danger-xx-dark);
+.btn[data-outline='danger-dark'] {
+	color: var(--btn-danger-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-danger-xx-dark);
 }
 
-.btn[data-fill="danger"] {
-  color: var(--bg);
-  background-color: var(--btn-danger-xx);
-  border: 0.2em solid var(--btn-danger-xx);
+.btn[data-fill='danger'] {
+	color: var(--bg);
+	background-color: var(--btn-danger-xx);
+	border: 0.2em solid var(--btn-danger-xx);
 }
 
-.btn[data-fill="danger-dark"] {
-  color: var(--bg);
-  background-color: var(--btn-danger-xx-dark);
-  border: 0.2em solid var(--btn-danger-xx-dark);
+.btn[data-fill='danger-dark'] {
+	color: var(--bg);
+	background-color: var(--btn-danger-xx-dark);
+	border: 0.2em solid var(--btn-danger-xx-dark);
 }
 
-.btn[data-hover-outline="danger"]:hover
- {
-  color: var(--btn-danger-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-danger-xx);
+.btn[data-hover-outline='danger']:hover {
+	color: var(--btn-danger-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-danger-xx);
 }
 
-.btn[data-hover-outline="danger-dark"]:hover
- {
-  color: var(--btn-danger-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-danger-xx-dark);
+.btn[data-hover-outline='danger-dark']:hover {
+	color: var(--btn-danger-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-danger-xx-dark);
 }
 
-.btn[data-hover-fill="danger"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-danger-xx);
-  border: 0.2em solid var(--btn-danger-xx);
+.btn[data-hover-fill='danger']:hover {
+	color: var(--bg);
+	background-color: var(--btn-danger-xx);
+	border: 0.2em solid var(--btn-danger-xx);
 }
 
-.btn[data-hover-fill="danger-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-danger-xx-dark);
-  border: 0.2em solid var(--btn-danger-xx-dark);
+.btn[data-hover-fill='danger-dark']:hover {
+	color: var(--bg);
+	background-color: var(--btn-danger-xx-dark);
+	border: 0.2em solid var(--btn-danger-xx-dark);
 }
 
 /** Success Color variant */
-.btn[data-outline="success"] {
-  color: var(--btn-success-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-success-xx);
+.btn[data-outline='success'] {
+	color: var(--btn-success-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-success-xx);
 }
 
-.btn[data-outline="success-dark"] {
-  color: var(--btn-success-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-success-xx-dark);
+.btn[data-outline='success-dark'] {
+	color: var(--btn-success-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-success-xx-dark);
 }
 
-.btn[data-fill="success"] {
-  color: var(--bg);
-  background-color: var(--btn-success-xx);
-  border: 0.2em solid var(--btn-success-xx);
+.btn[data-fill='success'] {
+	color: var(--bg);
+	background-color: var(--btn-success-xx);
+	border: 0.2em solid var(--btn-success-xx);
 }
 
-.btn[data-fill="success-dark"] {
-  color: var(--bg);
-  background-color: var(--btn-success-xx-dark);
-  border: 0.2em solid var(--btn-success-xx-dark);
+.btn[data-fill='success-dark'] {
+	color: var(--bg);
+	background-color: var(--btn-success-xx-dark);
+	border: 0.2em solid var(--btn-success-xx-dark);
 }
 
-.btn[data-hover-outline="success"]:hover
- {
-  color: var(--btn-success-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-success-xx);
+.btn[data-hover-outline='success']:hover {
+	color: var(--btn-success-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-success-xx);
 }
 
-.btn[data-hover-outline="success-dark"]:hover
- {
-  color: var(--btn-success-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-success-xx-dark);
+.btn[data-hover-outline='success-dark']:hover {
+	color: var(--btn-success-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-success-xx-dark);
 }
 
-.btn[data-hover-fill="success"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-success-xx);
-  border: 0.2em solid var(--btn-success-xx);
+.btn[data-hover-fill='success']:hover {
+	color: var(--bg);
+	background-color: var(--btn-success-xx);
+	border: 0.2em solid var(--btn-success-xx);
 }
 
-.btn[data-hover-fill="success-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-success-xx-dark);
-  border: 0.2em solid var(--btn-success-xx-dark);
+.btn[data-hover-fill='success-dark']:hover {
+	color: var(--bg);
+	background-color: var(--btn-success-xx-dark);
+	border: 0.2em solid var(--btn-success-xx-dark);
 }
 
 /** Black Color variant */
-.btn[data-outline="black"] {
-  color: var(--btn-black-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-black-xx);
+.btn[data-outline='black'] {
+	color: var(--btn-black-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-black-xx);
 }
 
-.btn[data-outline="black-dark"] {
-  color: var(--btn-black-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-black-xx-dark);
+.btn[data-outline='black-dark'] {
+	color: var(--btn-black-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-black-xx-dark);
 }
 
-.btn[data-fill="black"] {
-  color: var(--bg);
-  background-color: var(--btn-black-xx);
-  border: 0.2em solid var(--btn-black-xx);
+.btn[data-fill='black'] {
+	color: var(--bg);
+	background-color: var(--btn-black-xx);
+	border: 0.2em solid var(--btn-black-xx);
 }
 
-.btn[data-fill="black-dark"] {
-  color: var(--bg);
-  background-color: var(--btn-black-xx-dark);
-  border: 0.2em solid var(--btn-black-xx-dark);
+.btn[data-fill='black-dark'] {
+	color: var(--bg);
+	background-color: var(--btn-black-xx-dark);
+	border: 0.2em solid var(--btn-black-xx-dark);
 }
 
-.btn[data-hover-outline="black"]:hover
- {
-  color: var(--btn-black-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-black-xx);
+.btn[data-hover-outline='black']:hover {
+	color: var(--btn-black-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-black-xx);
 }
 
-.btn[data-hover-outline="black-dark"]:hover
- {
-  color: var(--btn-black-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-black-xx-dark);
+.btn[data-hover-outline='black-dark']:hover {
+	color: var(--btn-black-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-black-xx-dark);
 }
 
-.btn[data-hover-fill="black"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-black-xx);
-  border: 0.2em solid var(--btn-black-xx);
+.btn[data-hover-fill='black']:hover {
+	color: var(--bg);
+	background-color: var(--btn-black-xx);
+	border: 0.2em solid var(--btn-black-xx);
 }
 
-.btn[data-hover-fill="black-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-black-xx-dark);
-  border: 0.2em solid var(--btn-black-xx-dark);
+.btn[data-hover-fill='black-dark']:hover {
+	color: var(--bg);
+	background-color: var(--btn-black-xx-dark);
+	border: 0.2em solid var(--btn-black-xx-dark);
 }
 
 /** White Color variant */
-.btn[data-outline="white"] {
-  color: var(--btn-white-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-white-xx);
+.btn[data-outline='white'] {
+	color: var(--btn-white-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-white-xx);
 }
 
-.btn[data-outline="white-dark"] {
-  color: var(--btn-white-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-white-xx-dark);
+.btn[data-outline='white-dark'] {
+	color: var(--btn-white-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-white-xx-dark);
 }
 
-.btn[data-fill="white"] {
-  color: var(--bg);
-  background-color: var(--btn-white-xx);
-  border: 0.2em solid var(--btn-white-xx);
+.btn[data-fill='white'] {
+	color: var(--bg);
+	background-color: var(--btn-white-xx);
+	border: 0.2em solid var(--btn-white-xx);
 }
 
-.btn[data-fill="white-dark"] {
-  color: var(--bg);
-  background-color: var(--btn-white-xx-dark);
-  border: 0.2em solid var(--btn-white-xx-dark);
+.btn[data-fill='white-dark'] {
+	color: var(--bg);
+	background-color: var(--btn-white-xx-dark);
+	border: 0.2em solid var(--btn-white-xx-dark);
 }
 
-.btn[data-hover-outline="white"]:hover
- {
-  color: var(--btn-white-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-white-xx);
+.btn[data-hover-outline='white']:hover {
+	color: var(--btn-white-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-white-xx);
 }
 
-.btn[data-hover-outline="white-dark"]:hover
- {
-  color: var(--btn-white-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-white-xx-dark);
+.btn[data-hover-outline='white-dark']:hover {
+	color: var(--btn-white-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-white-xx-dark);
 }
 
-.btn[data-hover-fill="white"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-white-xx);
-  border: 0.2em solid var(--btn-white-xx);
+.btn[data-hover-fill='white']:hover {
+	color: var(--bg);
+	background-color: var(--btn-white-xx);
+	border: 0.2em solid var(--btn-white-xx);
 }
 
-.btn[data-hover-fill="white-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-white-xx-dark);
-  border: 0.2em solid var(--btn-white-xx-dark);
+.btn[data-hover-fill='white-dark']:hover {
+	color: var(--bg);
+	background-color: var(--btn-white-xx-dark);
+	border: 0.2em solid var(--btn-white-xx-dark);
 }
 
 /** Purple Color variant */
-.btn[data-outline="purple"] {
-  color: var(--btn-purple-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-purple-xx);
+.btn[data-outline='purple'] {
+	color: var(--btn-purple-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-purple-xx);
 }
 
-.btn[data-outline="purple-dark"] {
-  color: var(--btn-purple-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-purple-xx-dark);
+.btn[data-outline='purple-dark'] {
+	color: var(--btn-purple-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-purple-xx-dark);
 }
 
-.btn[data-fill="purple"] {
-  color: var(--bg);
-  background-color: var(--btn-purple-xx);
-  border: 0.2em solid var(--btn-purple-xx);
+.btn[data-fill='purple'] {
+	color: var(--bg);
+	background-color: var(--btn-purple-xx);
+	border: 0.2em solid var(--btn-purple-xx);
 }
 
-.btn[data-fill="purple-dark"] {
-  color: var(--bg);
-  background-color: var(--btn-purple-xx-dark);
-  border: 0.2em solid var(--btn-purple-xx-dark);
+.btn[data-fill='purple-dark'] {
+	color: var(--bg);
+	background-color: var(--btn-purple-xx-dark);
+	border: 0.2em solid var(--btn-purple-xx-dark);
 }
 
-.btn[data-hover-outline="purple"]:hover
- {
-  color: var(--btn-purple-xx);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-purple-xx);
+.btn[data-hover-outline='purple']:hover {
+	color: var(--btn-purple-xx);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-purple-xx);
 }
 
-.btn[data-hover-outline="purple-dark"]:hover
- {
-  color: var(--btn-purple-xx-dark);
-  background-color: var(--bg);
-  border: 0.2em solid var(--btn-purple-xx-dark);
+.btn[data-hover-outline='purple-dark']:hover {
+	color: var(--btn-purple-xx-dark);
+	background-color: var(--bg);
+	border: 0.2em solid var(--btn-purple-xx-dark);
 }
 
-.btn[data-hover-fill="purple"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-purple-xx);
-  border: 0.2em solid var(--btn-purple-xx);
+.btn[data-hover-fill='purple']:hover {
+	color: var(--bg);
+	background-color: var(--btn-purple-xx);
+	border: 0.2em solid var(--btn-purple-xx);
 }
 
-.btn[data-hover-fill="purple-dark"]:hover
- {
-  color: var(--bg);
-  background-color: var(--btn-purple-xx-dark);
-  border: 0.2em solid var(--btn-purple-xx-dark);
+.btn[data-hover-fill='purple-dark']:hover {
+	color: var(--bg);
+	background-color: var(--btn-purple-xx-dark);
+	border: 0.2em solid var(--btn-purple-xx-dark);
 }

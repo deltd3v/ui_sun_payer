@@ -1,23 +1,22 @@
 /* Set the menu container's dimensions and default styles */
 header {
-  padding: 1em 0em;
+	padding: 1em 0em;
 
-  background-color: var(--bg);
+	background-color: var(--bg);
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 /* Position its child containers in a row */
 header .left,
 header .right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
-
 
 /** WEIRD !!!
  * css-variables don't work on media queries ?? 
@@ -28,177 +27,176 @@ header .right {
 
 /*** MOBILE SCREEN SIZES */
 @media only screen and (max-width: 768px) {
-  header {
-    width: 100%;
-    margin: 0 auto;
-  }
+	header {
+		width: 100%;
+		margin: 0 auto;
+	}
 
- 
-  /* Display mobile-menu icons and menu-list column */
-  #menu-toggle,
+	/* Display mobile-menu icons and menu-list column */
+	#menu-toggle,
   /* #mobile-menu-list, */
   #menu-toggle__label,
   #menu-toggle__icon-open,
   #menu-toggle__icon-close {
-    display: block;
-  }
+		display: block;
+	}
 
-  #mobile-menu-list {
-    display: none;
-  }
-  
-  /* Hide desktop-menu list */
-  #desktop-menu-list {
-    display: none;
-  }
+	#mobile-menu-list {
+		display: none;
+	}
 
-  /* Set the appropriate width on the header container */
-  /* header {
+	/* Hide desktop-menu list */
+	#desktop-menu-list {
+		display: none;
+	}
+
+	/* Set the appropriate width on the header container */
+	/* header {
     max-width: calc(768px - 100px);
     margin: 0 auto;
   } */
 
-  /* Hide CheckBox for allty tab-focus into the icon */
-  #menu-toggle {
-    /** LESSON: if you hide the checkbox, you can't tab into it and give it's label some :focus styles.
+	/* Hide CheckBox for allty tab-focus into the icon */
+	#menu-toggle {
+		/** LESSON: if you hide the checkbox, you can't tab into it and give it's label some :focus styles.
      * That sucks for allty. so hide it's visibility using the opacity to preserve the allty abilities of this element. 
       
      display: none;
      visibility: none;
     
      */
-    opacity: 0;
-  }
+		opacity: 0;
+	}
 
-  /** Allty: If i tab into the menu-checkbox, i would like to style it's label which holds a menu-(open||close) icon */
-  #menu-toggle:focus + #menu-toggle__label > *,
-  #menu-toggle:focus-within + #menu-toggle__label > * {
-    outline: 0.1em solid var(--accent);
-  }
+	/** Allty: If i tab into the menu-checkbox, i would like to style it's label which holds a menu-(open||close) icon */
+	#menu-toggle:focus + #menu-toggle__label > *,
+	#menu-toggle:focus-within + #menu-toggle__label > * {
+		outline: 0.1em solid var(--accent);
+	}
 
-  /** If the checkbox is not-checked, show the menu-open-icon */
-  #menu-toggle:not(:checked) + #menu-toggle__label > #menu-toggle__icon-open {
-    display: block;
-  }
+	/** If the checkbox is not-checked, show the menu-open-icon */
+	#menu-toggle:not(:checked) + #menu-toggle__label > #menu-toggle__icon-open {
+		display: block;
+	}
 
-  /** If the checkbox is checked, show the menu-close-icon */
-  #menu-toggle:checked + #menu-toggle__label > #menu-toggle__icon-close {
-    display: block;
-  }
+	/** If the checkbox is checked, show the menu-close-icon */
+	#menu-toggle:checked + #menu-toggle__label > #menu-toggle__icon-close {
+		display: block;
+	}
 
-  /** If the checkbox is checked, hide the menu-open-icon */
-  #menu-toggle:checked + #menu-toggle__label > #menu-toggle__icon-open {
-    display: none;
-  }
+	/** If the checkbox is checked, hide the menu-open-icon */
+	#menu-toggle:checked + #menu-toggle__label > #menu-toggle__icon-open {
+		display: none;
+	}
 
-  /** If the checkbox is not-checked, hide the menu-close-icon */
-  #menu-toggle:not(:checked) + #menu-toggle__label > #menu-toggle__icon-close {
-    display: none;
-  }
+	/** If the checkbox is not-checked, hide the menu-close-icon */
+	#menu-toggle:not(:checked) + #menu-toggle__label > #menu-toggle__icon-close {
+		display: none;
+	}
 
-  /** On hover, change the cursor to a poiner */
-  #menu-toggle__icon-open,
-  #menu-toggle__icon-close {
-    cursor: pointer;
-  }
+	/** On hover, change the cursor to a poiner */
+	#menu-toggle__icon-open,
+	#menu-toggle__icon-close {
+		cursor: pointer;
+	}
 
-  /** If the checkBox is checked, show the mobile menu list and it's links in a column */
-  #menu-toggle:checked ~ #mobile-menu-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+	/** If the checkBox is checked, show the mobile menu list and it's links in a column */
+	#menu-toggle:checked ~ #mobile-menu-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 
-  /** Set the mobile-menu's background */
-  #mobile-menu-list {
-    background-color: var(--bg);
-  }
+	/** Set the mobile-menu's background */
+	#mobile-menu-list {
+		background-color: var(--bg);
+	}
 
-  /** Set the dimensions of the mobile-menu-list */
-  #mobile-menu-list,
-  #menu-list {
-    width: 100%;
-  }
+	/** Set the dimensions of the mobile-menu-list */
+	#mobile-menu-list,
+	#menu-list {
+		width: 100%;
+	}
 
-  /** For each link in the mobile-menu list, create a column tab */
-  #menu-list li {
-    list-style: none;
-    padding: 0.5em 0em;
-    background-color: var(--bg);
-  }
+	/** For each link in the mobile-menu list, create a column tab */
+	#menu-list li {
+		list-style: none;
+		padding: 0.5em 0em;
+		background-color: var(--bg);
+	}
 
-  /** Align the mobile-menu links in the middle */
-  #menu-list li,
-  #menu-list li a {
-    text-align: center;
-  }
+	/** Align the mobile-menu links in the middle */
+	#menu-list li,
+	#menu-list li a {
+		text-align: center;
+	}
 
-  /** Each link in the mobile-menu should have the foreGround color and no under-line */
-  #menu-list a {
-    color: var(--fg);
-    text-decoration: none;
-  }
+	/** Each link in the mobile-menu should have the foreGround color and no under-line */
+	#menu-list a {
+		color: var(--fg);
+		text-decoration: none;
+	}
 
-  /* Unlike the desktop menu-list, when a link is hovered on within a mobile-screen, the outline will not be visible */
-  #menu-list li:hover a,
-  #menu-list li:focus a,
-  #menu-list li:focus-within a {
-    color: var(--accent);
+	/* Unlike the desktop menu-list, when a link is hovered on within a mobile-screen, the outline will not be visible */
+	#menu-list li:hover a,
+	#menu-list li:focus a,
+	#menu-list li:focus-within a {
+		color: var(--accent);
 
-    /* border: none; */
-    /* outline: .1em solid var(--accent); */
-  }
+		/* border: none; */
+		/* outline: .1em solid var(--accent); */
+	}
 
-  #menu-list li:hover,
-  #menu-list li:focus-within {
-    cursor: pointer;
-    background-color: var(--navvy);
-    border: 0.1em solid var(--yallow);
-  }
+	#menu-list li:hover,
+	#menu-list li:focus-within {
+		cursor: pointer;
+		background-color: var(--navvy);
+		border: 0.1em solid var(--yallow);
+	}
 }
 
 /*** DESKTOP SCREEN SIZES */
 @media only screen and (min-width: 768px) {
-  /* Set the desktop-menu-list into row of links */
-  #desktop-menu-list {
-    display: flex;
-    flex-direction: row;
-  }
+	/* Set the desktop-menu-list into row of links */
+	#desktop-menu-list {
+		display: flex;
+		flex-direction: row;
+	}
 
-  /**
+	/**
    * Add some space between the logo and the row of menu-links.
    * Remove the default browser styles on the li & a elements.
   */
-  #desktop-menu-list {
-    /* margin: 0 1em; */
-    list-style: none;
-    text-decoration: none;
-  }
+	#desktop-menu-list {
+		/* margin: 0 1em; */
+		list-style: none;
+		text-decoration: none;
+	}
 
-  /** When a link is hovered or focused on, change the text-color & outline styles of the link */
-  #desktop-menu-list li:focus a,
-  #desktop-menu-list li:focus-within a,
-  #desktop-menu-list li:hover a {
-    color: var(--accent);
+	/** When a link is hovered or focused on, change the text-color & outline styles of the link */
+	#desktop-menu-list li:focus a,
+	#desktop-menu-list li:focus-within a,
+	#desktop-menu-list li:hover a {
+		color: var(--accent);
 
-    border: none;
-    outline: 0.1em solid var(--accent);
-  }
+		border: none;
+		outline: 0.1em solid var(--accent);
+	}
 
-  /* Add space between each link element */
-  #desktop-menu-list li a {
-    margin: 0 0.5em;
-    color: var(--fg);
-    text-decoration: none;
-  }
+	/* Add space between each link element */
+	#desktop-menu-list li a {
+		margin: 0 0.5em;
+		color: var(--fg);
+		text-decoration: none;
+	}
 
-  /* Hide the mobile-menu elements */
-  #menu-toggle,
-  #mobile-menu-list,
-  #menu-toggle__label,
-  #menu-toggle__icon-open,
-  #menu-toggle__icon-close {
-    display: none;
-  }
+	/* Hide the mobile-menu elements */
+	#menu-toggle,
+	#mobile-menu-list,
+	#menu-toggle__label,
+	#menu-toggle__icon-open,
+	#menu-toggle__icon-close {
+		display: none;
+	}
 }

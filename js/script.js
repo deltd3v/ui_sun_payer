@@ -3,7 +3,7 @@
  * .logo svg path { ... }
  */
 
-const $logoElement = document.querySelector(".logo");
+const $logoElement = document.querySelector('.logo');
 $logoElement.innerHTML += `
 <svg width="32" height="32" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0166 0.0812752C17.4653 0.307893 17.2021 0.938496 17.4287 1.48977L22.6299 14.1428C23.006 15.0576 22.9302 16.4155 23.8431 16.7961V16.7961V16.7961C24.1478 16.9231 24.5053 16.9373 24.8188 16.8337C24.8433 16.8257 24.8676 16.8167 24.8918 16.8067V16.8067C25.8129 16.428 25.7365 15.0561 26.1195 14.1367L31.3767 1.51486C31.6058 0.964831 31.3457 0.33309 30.7958 0.103831C30.2458 -0.125428 29.6142 0.134609 29.3851 0.684642V0.684642C27.5388 5.11743 21.2507 5.11046 19.425 0.669108V0.669108C19.1984 0.117839 18.5678 -0.145343 18.0166 0.0812752Z" fill="#FCBD2F"/>
@@ -16,53 +16,50 @@ $logoElement.innerHTML += `
     <path fill-rule="evenodd" clip-rule="evenodd" d="M36.9593 2.9071C36.4005 2.70017 35.7801 2.98588 35.5735 3.54526L30.8218 16.4088C30.4823 17.3279 29.5279 18.2686 29.9375 19.1587V19.1587V19.1587C30.0739 19.4551 30.3236 19.7047 30.6205 19.8397C30.6443 19.8505 30.6686 19.8606 30.6934 19.8698V19.8698C31.6171 20.2119 32.4836 19.1734 33.378 18.7608L45.8156 13.0242C46.3567 12.7747 46.5932 12.1332 46.3439 11.5915C46.0947 11.0498 45.454 10.8129 44.913 11.0624V11.0624C40.5518 13.0739 35.9312 8.80362 37.5968 4.29464V4.29464C37.8034 3.73526 37.518 3.11404 36.9593 2.9071Z" fill="#FCBD2F"/>
     <path d="M30.8677 25.1244C30.8677 28.3178 28.2823 30.9055 25.0942 30.9055C21.9062 30.9055 19.3207 28.3178 19.3207 25.1244C19.3207 21.931 21.9062 19.3433 25.0942 19.3433C28.2823 19.3433 30.8677 21.931 30.8677 25.1244Z" fill="white" stroke="#FCBD2F"/>
 </svg>
-`;;
+`;
 
-
-
-const $menuToggleBox = document.querySelector("#menu-toggle");
-const $menuList = document.querySelector("#mobile-menu-list");
-const $menuToggleOpenIcon= document.querySelector("#menu-toggle__icon-open");
-const $menuToggleCloseIcon = document.querySelector("#menu-toggle__icon-close");
-
+const $menuToggleBox = document.querySelector('#menu-toggle');
+const $menuList = document.querySelector('#mobile-menu-list');
+const $menuToggleOpenIcon = document.querySelector('#menu-toggle__icon-open');
+const $menuToggleCloseIcon = document.querySelector('#menu-toggle__icon-close');
 
 /** Whenever the checkbox is checked, the menu list should be visible, if not checked, the menu list should be invisible */
 $menuToggleBox.onclick = (e) => {
-  const checked = e.target.checked;
+	const checked = e.target.checked;
 
-  if (checked) {
-    $menuList.style.display = "block";
-  }
+	if (checked) {
+		$menuList.style.display = 'block';
+	}
 
-  if (!checked) {
-    $menuList.style.display = "none";
-  }
+	if (!checked) {
+		$menuList.style.display = 'none';
+	}
 };
 
 /** Hide the mobile menu list upon screen resizing */
 window.onresize = (e) => {
-  const width = window.innerWidth;
-  const $menuToggleBox = document.querySelector("#menu-toggle");
+	const width = window.innerWidth;
+	const $menuToggleBox = document.querySelector('#menu-toggle');
 
-  /** While re-sizing the screen, ensure the screen-width is greater than 768px to hide the mobile-menu-list & menu-icon */
-  if (width > 768) {
-    $menuList.style.display = "none";
-    $menuToggleBox.style.display = "none";
-    $menuToggleOpenIcon.style.display = "none";
-    $menuToggleCloseIcon.style.display = "none";
-  }
+	/** While re-sizing the screen, ensure the screen-width is greater than 768px to hide the mobile-menu-list & menu-icon */
+	if (width > 768) {
+		$menuList.style.display = 'none';
+		$menuToggleBox.style.display = 'none';
+		$menuToggleOpenIcon.style.display = 'none';
+		$menuToggleCloseIcon.style.display = 'none';
+	}
 
-  /** nsure the checkBox is checked before displaying the mobile-menu-list */
-  if (width < 768) {
-    $menuToggleBox.style.display = "block";
-    
-    if ($menuToggleBox.checked) {
-      $menuList.style.display = "block";
-      $menuToggleCloseIcon.style.display  = 'block'
-    }
-    
-    if (!$menuToggleBox.checked) {
-      $menuToggleOpenIcon.style.display  = 'block'
-    }
-  }
+	/** nsure the checkBox is checked before displaying the mobile-menu-list */
+	if (width < 768) {
+		$menuToggleBox.style.display = 'block';
+
+		if ($menuToggleBox.checked) {
+			$menuList.style.display = 'block';
+			$menuToggleCloseIcon.style.display = 'block';
+		}
+
+		if (!$menuToggleBox.checked) {
+			$menuToggleOpenIcon.style.display = 'block';
+		}
+	}
 };
