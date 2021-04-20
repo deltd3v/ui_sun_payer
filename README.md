@@ -10,23 +10,14 @@ Click [here](https://deltd3v.github.io/ui_sun_payer/) to see the site live.
 ### Design
 Have a look at my re-design for mobile & desktop.
 
-<!--
-
-![desktop](./assets/SunPayerDesktop.svg)
-
-![mobile](./assets/SunPayerMobile.svg)
-
-![mobile-active-menu](./assets/SunPayerMobile-active-menu.svg)
-
--->
-
-<br />
 <img src="./assets/SunPayerDesktop.svg" width="300" alt="desktop design sample">
 <br />
+
 <img src="./assets/SunPayerMobile.svg" width="300" alt="mobile design sample">
 <br />
+
 <img src="./assets/SunPayerMobile-active-menu.svg" width="300" alt="mobile-menu-active design sample">
 <br />
 
-### Implementation details
+### Deployment
 This github repo hosts my source code for the project's static site. [Github Pages](https://pages.github.com/) serves my static site 
