@@ -13,13 +13,15 @@ html,
 body,
 .fs-rubik,
 .fs-rubik > *,
-.fs-rubik > * > * {
+.fs-rubik > * > *,
+.fs-rubik > * > * > * {
 	font-family: 'Rubik', -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu,
 		'Helvetica Neue', sans-serif;
 }
 
 .fs-raleway,
 .fs-raleway > *,
-.fs-raleway > * > * {
+.fs-raleway > * > *,
+.fs-raleway > * > * > * {
 	font-family: 'Raleway', -apple-system, BlinkMacSystemFont, Geneva, sans-serif;
 }
