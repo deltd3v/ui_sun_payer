@@ -20,11 +20,11 @@ Have a look at my re-design for mobile & desktop.
 
 <br />
 
-<img src="./assets/SunPayerDesktop.svg"   width="100" alt="desktop design sample">
+<img src="./assets/SunPayerDesktop.svg"   width="250" alt="desktop design sample">
 <br />
-<img src="./assets/SunPayerMobile.svg"   width="100" alt="mobile design sample">
+<img src="./assets/SunPayerMobile.svg"   width="250" alt="mobile design sample">
 <br />
-<img src="./assets/SunPayerMobile-active-menu.svg"   width="100" alt="mobile-menu-active design sample">
+<img src="./assets/SunPayerMobile-active-menu.svg"   width="250" alt="mobile-menu-active design sample">
 
 <br />
 
