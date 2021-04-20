@@ -18,12 +18,14 @@ Have a look at my re-design for mobile & desktop.
 
  -->
 
+<br />
 
-<img src="./assets/SunPayerDesktop.svg" width="350" alt="desktop design sample">
+<img src="./assets/SunPayerDesktop.svg"   width="100" alt="desktop design sample">
+<br />
+<img src="./assets/SunPayerMobile.svg"   width="100" alt="mobile design sample">
+<br />
+<img src="./assets/SunPayerMobile-active-menu.svg"   width="100" alt="mobile-menu-active design sample">
 
-<img src="./assets/SunPayerMobile.svg" width="350" alt="mobile design sample">
-
-<img src="./assets/SunPayerMobile-active-menu.svg" width="350" alt="mobile-menu-active design sample">
-
+<br />
 ### Implementation details
 This github repo hosts my source code for the project's static site. [Github Pages](https://pages.github.com/) serves my static site 
