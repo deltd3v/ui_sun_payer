@@ -1,0 +1,295 @@
+/*** FONT-SIZES !!!
+ * 
+ * This file offers your text some responsive capabilities.
+ * 
+ * Enjoy !
+ * 
+ * Usage:
+ * Apply a .fs-(1,2,3,4,5,6,7,8,9) on a text-element & watch it's 
+ * font-size & line-height become responsive to the screen width
+ *
+ * example: 
+ * <h1 class="fs-3">Title</h1>
+ * <p class="fs-6">Body text</p>
+ * 
+ * - You are free to make modifications, share or use this code. - 
+ */
+
+.fs-1 {
+  font-size: 61px;
+  line-height: calc(61px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-1 {
+    line-height: calc(calc(61px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-1 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-1 {
+    font-size: calc(61px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-1 {
+    font-size: 71px;
+  }
+}
+
+/*  */
+
+.fs-2 {
+  font-size: 51px;
+  line-height: calc(51px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-2 {
+    line-height: calc(calc(51px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-2 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-2 {
+    font-size: calc(51px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-2 {
+    font-size: 61px;
+  }
+}
+
+/*  */
+
+.fs-3 {
+  font-size: 41px;
+  line-height: calc(41px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-3 {
+    line-height: calc(calc(41px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-3 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-3 {
+    font-size: calc(41px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-3 {
+    font-size: 51px;
+  }
+}
+
+/*  */
+
+.fs-4 {
+  font-size: 36px;
+  line-height: calc(36px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-4 {
+    line-height: calc(calc(36px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-4 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-4 {
+    font-size: calc(36px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-4 {
+    font-size: 41px;
+  }
+}
+
+/*  */
+
+.fs-5 {
+  font-size: 26px;
+  line-height: calc(26px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-5 {
+    line-height: calc(calc(26px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-5 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-5 {
+    font-size: calc(26px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-5 {
+    font-size: 36px;
+  }
+}
+
+/*  */
+
+.fs-6 {
+  font-size: 21px;
+  line-height: calc(21px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-6 {
+    line-height: calc(calc(21px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-6 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-6 {
+    font-size: calc(21px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-6 {
+    font-size: 26px;
+  }
+}
+
+/*  */
+
+.fs-7 {
+  font-size: 17px;
+  line-height: calc(17px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-7 {
+    line-height: calc(calc(17px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-7 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-7 {
+    font-size: calc(17px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-7 {
+    font-size: 21px;
+  }
+}
+
+/*  */
+
+.fs-8 {
+  font-size: 13px;
+  line-height: calc(13px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-8 {
+    line-height: calc(calc(13px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-8 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-8 {
+    font-size: calc(13px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-8 {
+    font-size: 17px;
+  }
+}
+
+/*  */
+
+.fs-9 {
+  font-size: 10px;
+  line-height: calc(10px * 1.25);
+}
+
+@media screen and (min-width: 20em) {
+  .fs-9 {
+    line-height: calc(calc(10px * 1.25) + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .fs-9 {
+    line-height: calc(inherit * 1.25);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fs-9 {
+    font-size: calc(10px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fs-9 {
+    font-size: 13px;
+  }
+}
+
+/*  */

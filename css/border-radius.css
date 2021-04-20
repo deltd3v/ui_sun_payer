@@ -1,0 +1,23 @@
+/*** BORDER-RADIUS !!!
+ * 
+ * This file offers you border-radius size variants.
+ * 
+ * Enjoy ! 
+ * 
+ * Usage: 
+ * <button class="round-sm"></button>
+ * 
+ * - You are free to make modifications, share or use this code. - 
+ */
+
+.round-sm {
+  border-radius: 0.5em;
+}
+
+.round-md {
+  border-radius: 1em;
+}
+
+.round-lg {
+  border-radius: 1.5em;
+}

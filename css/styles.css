@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  --width-desktop: 1440px;
+
+  --width-mobile: 768px;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*** MOBILE SCREEN SIZES */
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0 auto;
+
+    max-width: 92vw;
+  }
+}
+
+/*** DESKTOP SCREEN SIZES */
+@media only screen and (min-width: 768px)   {
+  body {
+    margin: 0 auto;
+
+    max-width: 90vw;
+  }
+}

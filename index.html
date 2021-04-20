@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sun Payer</title>
-		<link
-			rel="shortcut icon"
-			href="./assets/favicon-yellow.ico"
-			type="image/x-icon"
-		/>
-		<link rel="stylesheet" href="./css/typography.css" />
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/global.css" />
-	</head>
-	<body class="fs-8">
-		<header>
-			<section class="header-left">
-				<section class="header-logo">
-					<img src="./assets/logo-white.svg" alt="White Sun flower logo" />
-				</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-				<nav class="header-nav fs-raleway">
-					<li class="fs-7"><a href="#">Home</a></li>
-					<li class="fs-7"><a href="#">Contact</a></li>
-					<li class="fs-7"><a href="#">Company</a></li>
-					<li class="fs-7"><a href="#">About us</a></li>
-				</nav>
-			</section>
+    <!-- CDN asset vendors -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
 
-			<section class="header-right fs-raleway">
-				<button class="sign-up-btn fs-7">Sign Up</button>
-			</section>
-		</header>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/font-sizes.css" />
+    <link rel="stylesheet" href="css/border-radius.css" />
 
-    <main class="fs-rubik">
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-yellow.ico"
+      type="image/x-icon"
+    />
+    <title>Sun Payer</title>
+  </head>
 
-      <section class="main-left">
-        <h1 class="fs-1">Pay wherever<br/>you go to make<br/>life better.
-         <img src="./assets/arrow-right.svg" alt="right arrow ">
-       
-        </h1>
-        <br />
-        <br />
-        <p class="fs-7">Mobile payment is a way of life. Add it to your <br />mobile phone to start a simple, safe and <br/>efficient life.</p>
-   
-        <br />
-     
-        </section>
+  <body data-theme="main-dark">
+    <header>
+      <section class="left">
+        <!-- Logo Svg will be loaded by script.js -->
+        <section class="logo"></section>
+
+        <!-- Menu checkBox will toggle the mobile-menu-list if checked, only on screen width < 768px -->
+        <input type="checkbox" id="menu-toggle" checked="false" />
+        <label for="menu-toggle" id="menu-toggle__label">
+          <!-- OPEN ICON -->
+          <ion-icon
+            class="fs-6"
+            id="menu-toggle__icon-open"
+            name="menu"
+          ></ion-icon>
+
+          <!-- CLOSE ICON -->
+          <ion-icon
+            class="fs-6"
+            id="menu-toggle__icon-close"
+            name="close"
+          ></ion-icon>
+        </label>
+
+        <!-- Desktop menu list will be visible to screen width > 768px -->
+        <nav id="desktop-menu-list">
+          <li><a class="fs-rubik fs-8" href="#">Home</a></li>
+          <li><a class="fs-rubik fs-8" href="#">Product</a></li>
+          <li><a class="fs-rubik fs-8" href="#">Company</a></li>
+          <li><a class="fs-rubik fs-8" href="#">About us</a></li>
+        </nav>
       </section>
 
-      <section class="main-right">
-        <img src="./assets/card-vector-group.svg" alt="credit card vector illustration">
-      </section>
-
-    </main>
-
-    <footer>
-      <button class="fs-rubik dasb-btn" style="display:flex;flex-direction: row;">
-        <img src="./assets/apple-icon.svg" alt="apple icon" class="dasb-icon">
-        <section class="dasb-labels">
-          <label class="fs-9" class="dasb-label-a">Download on the</label>
-          <br />
-          <span class="dasb-label-b fs-6">App Store</span>
+      <!-- The good ol' desparate call-to-action button to recruit minions ahem' i meant users -->
+      <section class="right">
+        <button
+          class="btn round-lg"
+          data-fill="accent"
+          data-hover-fill="accent-dark"
+        >
+          <h5 class="fs-rubik fs-8">Sign Up</h5>
         </button>
-        <section class="media">
-          <a href="#"><img src="./assets/facebook-icon.svg" alt="facebook icon"></a>
-          <a href="#"><img src="./assets/instagram-icon.svg" alt="instagram icon"></a>
-         
-            <a href="#" class="chat-icon-btn">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill="white" d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" />
-              </svg>
-            </a>
-          
-        </section>
-    </footer>
-		<!-- <script async defer type="module" src="./js/main.js"></script> -->
-	</body>
+      </section>
+    </header>
+
+    <!-- I did not like the ::after element implementation so i created this div that appears on mobile-screen-widths. 
+        The checkBox has functionality in script.js that controls this elements visibility 
+    -->
+    <div id="mobile-menu-list">
+      <nav id="menu-list" class="fs-rubik">
+        <li><a class="fs-rubik fs-6" href="#">Home</a></li>
+        <li><a class="fs-rubik fs-6" href="#">Product</a></li>
+        <li><a class="fs-rubik fs-6" href="#">Company</a></li>
+        <li><a class="fs-rubik fs-6" href="#">About us</a></li>
+      </nav>
+    </div>
+
+    <h1 class="fs-1 fs-raleway"> Title </h1>
+    <p class="fs-8 fs-rubik">No matter what happens in our lives, God is always there. We should learn to depend on him for everything. 
+      The process is not perfect but it becomes perfect with your dedication. 
+    </p>
+    <script src="js/script.js"></script>
+  </body>
 </html>

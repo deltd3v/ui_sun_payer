@@ -1,0 +1,65 @@
+/*** THEME !!!
+ * 
+ * This file offers you theme customization.
+ * 
+ * Enjoy ! 
+ * 
+ * Usage: 
+ * A) Create your own color palette & assign it's attribute on DOM containers.
+ * <style>
+ *  *[data-theme="main"] {
+ *    --accent: #363;  
+ *  } 
+ * </style>
+ * <div class="container" data-theme="main">
+ * 
+ * B) Create your own colors & assign them on elements
+ * <span style="color:var(--accent);">TEXT</span>
+ * </div>
+ * 
+ * - You are free to make modifications, share or use this code. - 
+ */
+
+*,
+*::before,
+*::after {
+  --primary: #0080ff;
+  --warning: #ca6200;
+  --success: #05ac05;
+  --danger: #d60000;
+  --purple: #8a14f8;
+  --black: #1f1f1f;
+  --white: #f0f0f0;
+
+  --white-dark: #d1d1d1;
+  --black-dark: #1b1b1b;
+  --warning-dark: #b65800;
+  --purple-dark: #550d99;
+  --danger-dark: #a00000;
+  --success-dark: #069206;
+  --primary-dark: #0263c5;
+
+  --black: #1f1f1f;
+  --white: #f0f0f0;
+
+  --navvy: #484871;
+  --yallow: #fcbd2f;
+
+  --yallow-dark: #be8f21;
+  --navvy-dark: #1b1b29;
+}
+
+*[data-theme="main-dark"] {
+  --bg: var(--navvy-dark);
+  --fg: var(--white);
+
+  --accent: var(--yallow);
+  --accent-dark: var(--yallow-dark);
+}
+
+*[data-theme="main-light"] {
+  --bg: var(--navvy);
+  --fg: var(--white);
+
+  --accent: var(--yallow);
+}
