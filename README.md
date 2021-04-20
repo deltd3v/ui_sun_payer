@@ -27,5 +27,6 @@ Have a look at my re-design for mobile & desktop.
 <img src="./assets/SunPayerMobile-active-menu.svg"   width="100" alt="mobile-menu-active design sample">
 
 <br />
+
 ### Implementation details
 This github repo hosts my source code for the project's static site. [Github Pages](https://pages.github.com/) serves my static site 
