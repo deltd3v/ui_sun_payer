@@ -34,10 +34,9 @@ header .right {
 
 	/* Display mobile-menu icons and menu-list column */
 	#menu-toggle,
-  /* #mobile-menu-list, */
-  #menu-toggle__label,
-  #menu-toggle__icon-open,
-  #menu-toggle__icon-close {
+	#menu-toggle__label,
+	#menu-toggle__icon-open,
+	#menu-toggle__icon-close {
 		display: block;
 	}
 
@@ -165,12 +164,21 @@ header .right {
 	}
 
 	/**
-   * Add some space between the logo and the row of menu-links.
-   * Remove the default browser styles on the li & a elements.
-  */
+	 * Add some space between the logo and the row of menu-links.
+	 * Remove the default browser styles on the li & a elements.
+    */
 	#desktop-menu-list {
 		/* margin: 0 1em; */
 		list-style: none;
+		text-decoration: none;
+	}
+
+	#desktop-menu-list li {
+		margin: 0 0.5em;
+	}
+
+	#desktop-menu-list li a {
+		color: var(--fg);
 		text-decoration: none;
 	}
 
@@ -185,7 +193,7 @@ header .right {
 	}
 
 	/* Add space between each link element */
-	#desktop-menu-list li a {
+	#desktop-menu-list {
 		margin: 0 0.5em;
 		color: var(--fg);
 		text-decoration: none;
