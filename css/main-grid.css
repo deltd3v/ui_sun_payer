@@ -4,6 +4,73 @@
 		margin: 0 auto;
 
 		max-width: 92vw;
+		width: 100%;
+	}
+
+	main.grid {
+		display: grid;
+		grid-template-columns: repeat(1, auto);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+			'card-section'
+			'article'
+			'footer-left'
+			'footer-right';
+	}
+
+	/* body,
+	main.grid > * {
+		border: 0.1em solid var(--accent);
+	} */
+
+	main.grid article {
+		grid-area: article;
+	}
+
+	main.grid .card-section {
+		grid-area: card-section;
+	}
+
+	main.grid .footer-left {
+		grid-area: footer-left;
+	}
+
+	main.grid .footer-right {
+		grid-area: footer-right;
+	}
+
+	/* Grid Cell Content */
+	main.grid > * {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem 0rem;
+	}
+
+	main.grid article .title {
+		margin: 2em 0em;
+	}
+
+	main.grid article .body {
+		margin: 1em 0em;
+	}
+
+	main.grid .footer-left div > * {
+		margin: 2rem 0rem;
+	}
+
+	main.grid .card-section .credit-card-vector svg {
+		width: 100%;
+	}
+
+	main.grid > .footer-right div > * {
+		margin: 2rem 0rem;
+	}
+	/* Links */
+	main.grid > .footer-right div > div.social-link-icons a {
+		margin: 0 1em;
 	}
 }
 
@@ -29,9 +96,9 @@
 		grid-template-columns: repeat(5, auto);
 
 		grid-template-areas:
-			'article article article logo-section logo-section logo-section logo-section logo-section'
-			'article article article logo-section logo-section logo-section logo-section logo-section'
-			'article article article logo-section logo-section logo-section logo-section logo-section'
+			'article article article card-section card-section card-section card-section card-section'
+			'article article article card-section card-section card-section card-section card-section'
+			'article article article card-section card-section card-section card-section card-section'
 			'footer-left footer-left footer-left footer-right footer-right footer-right footer-right footer-right'
 			'footer-left footer-left footer-left footer-right footer-right footer-right footer-right footer-right';
 	}
@@ -44,8 +111,8 @@
 		flex-direction: column;
 	}
 
-	main.grid .logo-section {
-		grid-area: logo-section;
+	main.grid .card-section {
+		grid-area: card-section;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
