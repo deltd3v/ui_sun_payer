@@ -1,0 +1,12 @@
+.social-link-icons {
+	margin: 0 1em;
+}
+
+.social-link-icons a {
+	margin: 0 1em;
+}
+
+.social-link-icons a:hover svg path,
+.social-link-icons a:focus svg path {
+	stroke: var(--accent);
+}
