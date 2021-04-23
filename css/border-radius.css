@@ -21,3 +21,15 @@
 .round-lg {
 	border-radius: 1.5em;
 }
+
+.round-xl {
+	border-radius: 2em;
+}
+
+.round-xxl {
+	border-radius: 5em;
+}
+
+.round-xxxl {
+	border-radius: 10em;
+}

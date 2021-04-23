@@ -9,7 +9,6 @@ button#apple-btn {
 	padding: 0.5em 1em;
 	border: 0.1em solid var(--fg);
 	transition: all 1.5s ease-in-out;
-	border-radius: 5em;
 }
 
 button#apple-btn:hover,
