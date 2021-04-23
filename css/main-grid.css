@@ -55,7 +55,7 @@
 	main.grid .footer-left {
 		display: flex;
 		flex-direction: row;
-		align-items: flex-start;
+		align-items: flex-end;
 		justify-content: space-between;
 
 		grid-area: footer-left;
@@ -64,8 +64,20 @@
 	main.grid .footer-right {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: flex-end;
 		grid-area: footer-right;
+	}
+
+	main.grid .footer-left div,
+	main.grid .footer-right div {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	main.grid .footer-left div {
+		justify-content: space-between;
+		width: 100%;
 	}
 }

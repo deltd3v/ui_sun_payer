@@ -8,7 +8,7 @@ button#apple-btn {
 	outline: none;
 	padding: 0.5em 1em;
 	border: 0.1em solid var(--fg);
-	transition: all 1.5s ease-in-out;
+	transition: all 0.6s ease-in-out;
 }
 
 button#apple-btn:hover,
