@@ -26,7 +26,10 @@
 		<link rel="stylesheet" href="css/theme.css" />
 		<link rel="stylesheet" href="css/buttons.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/main-grid.css" />
 		<link rel="stylesheet" href="css/font-sizes.css" />
+		<link rel="stylesheet" href="css/apple-btn.css" />
+		<link rel="stylesheet" href="css/chat-vector.css" />
 		<link rel="stylesheet" href="css/border-radius.css" />
 
 		<!-- CDN asset vendors -->
@@ -95,7 +98,52 @@
 		</div>
 
 		<!-- LayOut -->
+		<main class="grid">
+			<article class="fs-rubik fs-7">
+				<h3 class="fs-2">
+					Pay wherever <br />
+					you go to make <br />
+					life better.
+				</h3>
+				<p>
+					Mobile payment is a way of life. Add it to your <br />
+					mobile phone to start a simple, safe ad efficient life.
+				</p>
+			</article>
+			<section class="logo-section fs-rubik">
+				<!-- JavaScript will load the credit card vector -->
+				<div class="credit-card-vector"></div>
+			</section>
+			<section class="footer-left">
+				<div class="arrow-right"></div>
+				<button id="apple-btn">
+					<section class="apple-vector">
+						<!-- vector will be loaded using Javascript -->
+					</section>
+					<section for="apple-btn fs-rubik">
+						<span class="fs-9">Download on the</span>
+						<span class="fs-7">App Store</span>
+					</section>
+				</button>
+			</section>
+			<section class="footer-right">
+				<div class="social-link-icons">
+					<a href="#" class="insta-vector"></a>
+					<a href="#" class="fb-vector"></a>
+				</div>
+				<a href="#" class="chat-link">
+					<span class="chat-vector"></span>
+				</a>
+			</section>
+		</main>
 
 		<script src="js/script.js"></script>
+		<script src="js/loadFbVector.js"></script>
+		<script src="js/loadLogoVector.js"></script>
+		<script src="js/loadArrowRight.js"></script>
+		<script src="js/loadChatVector.js"></script>
+		<script src="js/loadInstaVector.js"></script>
+		<script src="js/loadAppleVector.js"></script>
+		<script src="js/loadCreditCardVector.js"></script>
 	</body>
 </html>

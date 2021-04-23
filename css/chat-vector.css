@@ -1,0 +1,30 @@
+.chat-vector svg path {
+	fill: var(--navvy);
+}
+
+.chat-vector {
+	display: inline-block;
+
+	padding: 0.8em;
+	border-radius: 10em;
+	background-color: var(--accent);
+}
+
+.chat-vector:hover {
+	background-color: var(--accent-dark);
+}
+
+.chat-vector:hover svg path {
+	fill: var(--bg);
+	height: 100%;
+	width: 100%;
+}
+
+.chat-link:focus .chat-vector {
+	border: 0.01em solid var(--accent);
+	background-color: var(--bg);
+}
+
+.chat-link:focus .chat-vector svg path {
+	fill: var(--accent);
+}

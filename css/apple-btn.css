@@ -1,0 +1,136 @@
+#apple-btn {
+	background-color: var(--navvy-dark);
+}
+
+button#apple-btn {
+	color: var(--fg);
+	background-color: var(--bg);
+	outline: none;
+	padding: 0.5em 1em;
+	border: 0.1em solid var(--fg);
+	transition: all 0.1s ease-in-out;
+	border-radius: 5em;
+}
+
+button#apple-btn:hover,
+button#apple-btn:focus {
+	cursor: pointer;
+}
+
+button#apple-btn,
+button#apple-btn section {
+	display: flex;
+}
+
+button#apple-btn {
+	flex-direction: row;
+}
+
+button#apple-btn section {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+button#apple-btn section span:nth-child(1) {
+	font-weight: lighter;
+}
+
+button#apple-btn .apple-vector svg {
+	width: 40px;
+	height: 40px;
+	margin: 0 0.5em;
+}
+
+button#apple-btn .apple-vector svg path {
+	fill: white;
+	stroke: white;
+}
+
+/** Hover State */
+/*
+Hollow-hover-state
+
+
+button#apple-btn:hover, 
+button#apple-btn:focus {
+    background-color: var(--bg);
+    border: 0.1em solid var(--accent);
+} 
+
+button#apple-btn:hover  .apple-vector svg path, 
+button#apple-btn:focus  .apple-vector svg path {
+    fill:var(--accent);
+    stroke:var(--accent);
+}
+
+ 
+button#apple-btn:hover section span:nth-child(2), 
+button#apple-btn:focus section span:nth-child(2) {
+    color:var(--accent)
+}
+
+*/
+
+/* Filled Hover State */
+button#apple-btn:hover,
+button#apple-btn:focus {
+	background-color: var(--fg);
+}
+
+button#apple-btn:hover .apple-vector svg path,
+button#apple-btn:focus .apple-vector svg path {
+	fill: var(--accent);
+	stroke: var(--accent);
+}
+
+/* Add a line-gradient on the button's border  */
+button#apple-btn {
+	color: var(--fg);
+	box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+	border: 0.2em solid transparent;
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0)
+		),
+		linear-gradient(101deg, var(--fg), var(--bg));
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	box-shadow: 2px 1000px 1px var(--bg) inset;
+}
+
+button#apple-btn:hover {
+	background-image: none;
+	box-shadow: 2px 1000px 1px var(--accent) inset;
+}
+
+button#apple-btn:focus {
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0)
+		),
+		linear-gradient(101deg, var(--accent), var(--bg));
+}
+
+button#apple-btn:hover,
+button#apple-btn:focus {
+	color: var(--bg);
+}
+
+button#apple-btn:hover section span {
+	color: var(--bg);
+}
+
+button#apple-btn:focus section span {
+	color: var(--accent);
+}
+
+button#apple-btn:focus .apple-vector svg path {
+	fill: var(--accent);
+	stroke: var(--accent);
+}
+
+button#apple-btn:hover .apple-vector svg path {
+	fill: var(--bg);
+	stroke: var(--bg);
+}
