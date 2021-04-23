@@ -1,41 +1,3 @@
-main.grid > * {
-	border: 1px solid var(--accent);
-}
-
-
-main.grid {
-	width: 100%;
-	height: 92%;
-
-	display: grid;
-	grid-template-rows: repeat(8, auto);
-	grid-template-columns: repeat(5, auto);
-
-	grid-template-areas:
-		'article article article article logo-section logo-section logo-section logo-section'
-		'article article article article logo-section logo-section logo-section logo-section'
-		'article article article article logo-section logo-section logo-section logo-section'
-		'footer-left footer-left footer-left footer-left footer-right footer-right footer-right footer-right'
-		'footer-left footer-left footer-left footer-left footer-right footer-right footer-right footer-right'
-	;
-}
-
-main.grid article {
-	grid-area: article;
-}
-
-main.grid .logo-section {
-	grid-area: logo-section;
-}
-
-main.grid .footer-left {
-	grid-area: footer-left;
-}
-
-main.grid .footer-right {
-	grid-area: footer-right;
-}
-
 /*** MOBILE SCREEN SIZES */
 @media only screen and (max-width: 768px) {
 	body {
@@ -51,5 +13,59 @@ main.grid .footer-right {
 		margin: 0 auto;
 
 		max-width: 90vw;
+	}
+
+	/** To see the grid, remove this comment */
+	/* main.grid > * {
+	border: 1px solid var(--accent);
+}   */
+
+	main.grid {
+		width: 100%;
+		height: 92%;
+
+		display: grid;
+		grid-template-rows: repeat(8, auto);
+		grid-template-columns: repeat(5, auto);
+
+		grid-template-areas:
+			'article article article logo-section logo-section logo-section logo-section logo-section'
+			'article article article logo-section logo-section logo-section logo-section logo-section'
+			'article article article logo-section logo-section logo-section logo-section logo-section'
+			'footer-left footer-left footer-left footer-right footer-right footer-right footer-right footer-right'
+			'footer-left footer-left footer-left footer-right footer-right footer-right footer-right footer-right';
+	}
+
+	main.grid article {
+		grid-area: article;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	main.grid .logo-section {
+		grid-area: logo-section;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	main.grid .footer-left {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		grid-area: footer-left;
+	}
+
+	main.grid .footer-right {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		grid-area: footer-right;
 	}
 }
