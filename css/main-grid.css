@@ -18,11 +18,6 @@
 			'footer-right';
 	}
 
-	/* body,
-	main.grid > * {
-		border: 0.1em solid var(--accent);
-	} */
-
 	main.grid article {
 		grid-area: article;
 	}
@@ -68,7 +63,7 @@
 	main.grid > .footer-right div > * {
 		margin: 2rem 0rem;
 	}
-	/* Links */
+
 	main.grid > .footer-right div > div.social-link-icons a {
 		margin: 0 1em;
 	}
@@ -81,11 +76,6 @@
 
 		max-width: 90vw;
 	}
-
-	/** To see the grid, remove this comment */
-	/* main.grid > * {
-	border: 1px solid var(--accent);
-}   */
 
 	main.grid {
 		width: 100%;
